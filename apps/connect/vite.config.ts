@@ -14,27 +14,22 @@ const MAINNET_RPCS =  {
   }
 }
 
+
+const PUBLIC_URL = process.env.PUBLIC_URL || ''
+
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.PUBLIC_URL || '',
+  base: PUBLIC_URL,
   define: {
     redirects: {},
-    wormholeConnectConfig: {
-      walletConnectProjectId: process.env.VITE_APP_WALLET_CONNECT_PROJECT_ID || '',
-      env: process.env.VITE_APP_CLUSTER || 'mainnet',
-      ...(process.env.VITE_APP_CLUSTER === 'mainnet' ? MAINNET_RPCS : {}),
-      showHamburgerMenu: false,
-      menu: [
-        {
-          label: 'Advanced Tools',
-          href: `${process.env.PUBLIC_URL}/advanced-tools/`,
-          order: 1
-        }
-      ]
-    }
+    navBar: [
+      { label: "Home", href: `${PUBLIC_URL}/` },
+      { label: "Dashboard", active: true, href: `${PUBLIC_URL}/usdc-rewards` }
+    ],
   },
   plugins: [
-    react(), 
+    react(),
     viteStaticCopy({
       targets: [
         {
