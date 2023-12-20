@@ -60,7 +60,7 @@ createWeb3Modal({
     '--w3m-accent': '#fff',
     '--w3m-color-mix': 'rgb(0,0,0,0.8)',
     '--w3m-color-mix-strength': 25,
-    '--w3m-border-radius-master': "0px",
+    '--w3m-border-radius-master': "1px",
   },
 })
 

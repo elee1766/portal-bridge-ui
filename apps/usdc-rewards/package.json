@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@floating-ui/react": "^0.26.4",
     "@gfxlabs/oku-chains": "^0.0.19",
     "@web3modal/wagmi": "^3.5.0",
     "ethereum-blockies-base64": "^1.0.2",

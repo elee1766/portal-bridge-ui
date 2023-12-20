@@ -1,7 +1,7 @@
 import './App.css'
-import { Background } from './atoms/Background'
-import { Footer } from './atoms/Footer'
-import { Header } from './atoms/Header'
+import { Background } from './components/Background'
+import { Footer } from './components/Footer'
+import { Header } from './components/Header'
 import { DashboardLayout } from './layouts/DashboardLayout'
 import { AppProvider } from './providers'
 
