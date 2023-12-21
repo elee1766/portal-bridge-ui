@@ -68,6 +68,7 @@ const ConnectedDashboard = () => {
   const [usdcHeld, setUSDCHeld] = useState<number | undefined>(undefined)
   const [cusdcHeld, setCUSDCHeld] = useState<number | undefined>(undefined)
   const [ausdcHeld, setAUSDCHeld] = useState<number | undefined>(undefined)
+  const [unclaimedRewards, setUnclaimedRewards] = useState<number | undefined>(undefined)
 
 
   const fillExampleValues = ()=> {
@@ -78,7 +79,8 @@ const ConnectedDashboard = () => {
       setUSDCBridged(1558)
       setUSDCHeld(63758)
       setAUSDCHeld(1558)
-      setCUSDCHeld(0)
+      setCUSDCHeld(142)
+      setUnclaimedRewards(69420)
   }
   fillExampleValues;
   useEffect(()=>{
@@ -187,9 +189,9 @@ const ConnectedDashboard = () => {
               </div>
               <div className="">
                 <InfoStatWindow
-                  header="Held"
-                  value={formatInteger(cusdcHeld)}
-                  unit="cUSDC"
+                  header="Unclaimed Rewards"
+                  value={formatInteger(unclaimedRewards)}
+                  unit="USDC"
                 />
               </div>
             </div>

@@ -25,7 +25,7 @@ export default defineConfig({
     redirects: {},
     navBar: [
       { label: "Home", href: `${PUBLIC_URL}/` },
-      { label: "Dashboard", active: true, href: `${PUBLIC_URL}/usdc-rewards` }
+      { label: "Dashboard", active: true, href: `${PUBLIC_URL}/rewards-dashboard` }
     ],
   },
   plugins: [

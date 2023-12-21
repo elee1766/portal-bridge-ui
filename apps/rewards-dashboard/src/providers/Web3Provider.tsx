@@ -9,7 +9,8 @@ import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
 import { arbitrum, mainnet} from '@gfxlabs/oku-chains'
 export const CHAINS_LIST = [arbitrum, mainnet]
 
-const projectId = '5d718b8042515a6ef726a5ae58baca91'
+const envProjectId = process.env.VITE_APP_WALLET_CONNECT_PROJECT_ID
+const projectId = envProjectId ? envProjectId : '5d718b8042515a6ef726a5ae58baca91'
 
 // TODO:
 const metadata = {
