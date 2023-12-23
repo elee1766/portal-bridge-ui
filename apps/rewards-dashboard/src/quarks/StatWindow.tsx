@@ -71,9 +71,7 @@ export const InfoStatWindow = (props: InfoStatWindowProps) => {
     flex flex-row flex-1
     ${WindowBackground}
     rounded-lg
-    pl-7
-    pr-4
-    py-4
+    pl-7 pr-4 py-4
     justify-between
     `}
     >
